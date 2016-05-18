@@ -34,13 +34,14 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'sqlite3'
-  gem 'web-console'
+  #gem 'web-console'
   gem 'spring'
 end
 
 group :test do
 	gem 'minitest-reporters'
 	gem 'mini_backtrace'
+	gem 'guard'
 	gem 'guard-minitest'
 end
 
