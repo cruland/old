@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
      has_secure_password
      validates :password, length: { minimum: 6 }, allow_blank: true
      has_attached_file :pic
-     has_attached_file :document
+     has_attached_file :attach
      
      # Returns the hash digest of the given string.
      def User.digest(string)

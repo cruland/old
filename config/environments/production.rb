@@ -80,13 +80,5 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
   config.force_ssl = true
-  config.paperclip_defaults = {
-  storage: :s3,
-  s3_credentials: {
-    bucket: ENV.fetch('spaceplans'),
-    access_key_id: ENV.fetch('AKIAI5A7Q474JVM6T3CQ'),
-    secret_access_key: ENV.fetch('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'),
-    s3_region: ENV.fetch('US Standard'),
-  }
-}
+
 end
