@@ -6,6 +6,12 @@
 <%= gravatar_for @user %>
 <%= @user.name %>
 </h1>
+<a href="<%= @user.attach.url %> ">
+     <b> File Attached</b>
+</a>
+<br/>
+<%= image_tag @user.pic.url %>
+<br/>
 </section>
 </aside>
 </div>

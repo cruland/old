@@ -13,6 +13,15 @@
 <%= f.password_field :password, class: 'form-control' %>
 <%= f.label :password_confirmation, "Confirmation" %>
 <%= f.password_field :password_confirmation, class: 'form-control' %>
+<p>
+     <b> attachment </b><br/>
+     <%= f.file_field :attach %>
+</p>
+
+<p>
+     <b> Picture</b><br/>
+     <%= f.file_field :pic %>
+</p>
 <%= f.submit "Create my account", class: "btn btn-primary" %>
 <% end %>
 </div>
